@@ -19,7 +19,7 @@ sleep 1
 cat ports
 
 # nmap
-echo -e "\nnmap on discovered ports\n"
+echo -e "\n\nnmap on discovered ports now\n"
 sleep 1
 sudo nmap -sC -sV -Pn -p$(/usr/bin/cat ports) -O $ip_address -A --min-rate=500 > nmap
 
